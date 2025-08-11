@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chocolate Cake — Callista's Bakery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Callista's Bakery</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navCC"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navCC">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="products.html">Products</a></li></ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <a href="products.html" class="btn btn-outline-secondary mb-3">&larr; Back to Products</a>
+
+    <div class="product-detail bg-white p-4 rounded shadow-sm">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg" alt="Chocolate Cake" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-pink">Chocolate Cake</h2>
+          <div class="fs-4 fw-bold text-pink mb-3">Rs. 300</div>
+          <p>Rich and moist chocolate cake with layers of chocolate frosting. Made with premium cocoa and the finest ingredients for the ultimate chocolate experience.</p>
+
+          <div class="features mb-3">
+            <h6>Sizes</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="size" id="s6">
+              <label class="form-check-label" for="s6">6 inch — Rs. 600</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="size" id="s8" checked>
+              <label class="form-check-label" for="s8">8 inch — Rs. 1200</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="size" id="s10">
+              <label class="form-check-label" for="s10">10 inch — Rs. 1800</label>
+            </div>
+          </div>
+
+          <div class="order-section d-flex gap-2">
+            <div class="input-group w-50">
+              <label class="input-group-text" for="qty">Qty</label>
+              <input id="qty" type="number" class="form-control" min="1" value="1">
+            </div>
+            <button class="btn btn-pink" onclick="addToCartDetail()">Add to Cart</button>
+            <button class="btn btn-outline-dark" onclick="orderNow()">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-3 text-center">
+    <small>&copy; 2024 Callista's Bakery</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
